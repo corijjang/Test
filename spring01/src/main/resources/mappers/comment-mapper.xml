@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper			
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"			
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kh.ex01.mappers.comment">
+	<select id="commentList" resultType="CommentVo">
+		select * from tbl_comment
+		where bno = #{bno}
+		order by cno desc
+	</select>
+	
+	<insert id="insertComment">
+		insert into tbl_comment(cno, bno, userid, content)
+		values(seq_cno.nextval, #{bno}, #{userid}, #{content})
+	</insert>
+	
+	<delete id="deleteComment">
+		delete from tbl_comment
+		where cno = #{cno}
+	</delete>
+	
+	<update id="updateComment">
+		update tbl_comment set
+			content = #{content},
+			userid = #{userid}
+		where cno = #{cno}
+	</update>
+</mapper>

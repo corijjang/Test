@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+  <tlib-version>1.1</tlib-version>
+  <short-name>myfn</short-name>
+  
+  <function>
+  	<name>isImage</name>
+  	<function-class>com.kh.ex01.util.MyFileUploadUtil</function-class>
+  	<function-signature>
+  		boolean isImage(java.lang.String)
+  	</function-signature>
+  </function>
+  
+  <function>
+  	<name>getShortName</name>
+  	<function-class>com.kh.ex01.util.MyFileUploadUtil</function-class>
+  	<function-signature>
+  		java.lang.String getShortName(java.lang.String)
+  	</function-signature>
+  </function>
+</taglib>

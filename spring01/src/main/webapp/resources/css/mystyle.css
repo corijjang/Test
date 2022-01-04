@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#fileDrop {
+	width: 80%;
+	height: 100px;
+	background-color: yellow;
+	margin: 20px auto;
+	border: 1px dashed blue;
+}
+	
+.divUploaded {
+	width: 150px;
+	float: left;
+}
